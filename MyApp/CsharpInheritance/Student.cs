@@ -29,9 +29,15 @@ namespace CsharpInheritance
             Name = name;
         }
 
-        public void Present()
+        public new void Speak()
         {
             Console.WriteLine("I'm a student!");
+        }
+
+        public override void Introduction()
+        {
+            base.Introduction();
+            Console.WriteLine($"I'm also a student and my ID is: {StudentID}");
         }
     }
 }

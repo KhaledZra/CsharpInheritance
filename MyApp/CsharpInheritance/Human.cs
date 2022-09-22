@@ -42,13 +42,18 @@ namespace CsharpInheritance
 
         public Human(int age, string name)
         {
-            this._age = age;
-            this.Name = Name;
+            this.Age = age;
+            this.Name = name;
         }
 
         public void Speak()
         {
-            Console.WriteLine("Hello!");
+            Console.WriteLine("I'm a human!");
+        }
+
+        public virtual void Introduction()
+        {
+            Console.WriteLine($"My name is {Name} and i'm {Age} old!");
         }
     }
 }

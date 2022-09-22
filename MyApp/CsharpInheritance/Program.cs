@@ -9,13 +9,22 @@
             Teacher t1 = new(24, "Timmy", "TimOhm97.Teacher");
 
             Console.Clear();
+            
 
+            Console.WriteLine("---------------------------------");
             h1.Speak();
-            s1.Present();
-            t1.Present();
+            h1.Introduction();
+            Console.WriteLine("---------------");
+            s1.Speak();
+            s1.Introduction();
+            Console.WriteLine("---------------");
+            t1.Speak();
+            t1.Introduction();
+            Console.WriteLine("---------------------------------");
 
 
-            Console.WriteLine("Program end!");
+
+            Console.Write("Program end! Press any key to quit...");
             Console.ReadLine();
         }
     }
